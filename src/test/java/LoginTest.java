@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest {
     public void testLoginSuccessful(){
         super.register("Hola","1234");
         super.login("Hola","1234");
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
         assertEquals(driver.getCurrentUrl(),"http://localhost:3000/home");
     }
 }
